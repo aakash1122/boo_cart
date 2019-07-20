@@ -1,12 +1,15 @@
-import React from "react";
+import React, { useContext } from "react";
+import { Link } from "react-router-dom";
+import { store } from "../contexts/StoreContext";
 
-export default function Navbar() {
+export default function Navbar(props) {
+  const { cart } = useContext(store);
   return (
-    <nav className="navbar navbar-expand-lg navbar-light bg-light">
+    <nav className="navbar navbar-expand-sm navbar-light bg-light">
       <div className="container">
-        <a className="navbar-brand text-danger" href="#">
-          Boo Cart
-        </a>
+        <Link to="/">
+          <h3 className="navbar-brand text-danger">Boo Cart</h3>
+        </Link>
         <button
           className="navbar-toggler"
           type="button"
@@ -18,9 +21,21 @@ export default function Navbar() {
         >
           <span className="navbar-toggler-icon" />
         </button>
-        <div className="collapse navbar-collapse" id="navbarNav">
-          <span class="navbar-text ml-auto text-success">Cart 0</span>
-        </div>
+        <Link to="/cart">
+          <div
+            className="collapse navbar-collapse"
+            id="navbarNav"
+            style={{ cursor: "pointer" }}
+          >
+            <i
+              className="material-icons navbar-text ml-auto text-success"
+              style={{ fontSize: "36px" }}
+            >
+              shopping_cart
+            </i>
+            <h4 className="mb-0 text-secondary ml-1 ">{cart.length}</h4>
+          </div>
+        </Link>
       </div>
     </nav>
   );

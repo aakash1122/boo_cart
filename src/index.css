@@ -11,3 +11,20 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+
+.cart-item .col h6{
+  line-height: 64px;
+  text-align: center;
+  vertical-align: middle
+}
+.cart-item .col {
+  height: 100%;
+  width: 100%
+}
+.cart-item .col i{
+  align-self: center;
+  margin: 0 8px;
+  cursor: pointer;
+}
+
