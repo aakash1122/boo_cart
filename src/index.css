@@ -12,19 +12,22 @@ code {
     monospace;
 }
 
+.cart-item {
+  position: relative;
+}
 
-.cart-item .col h6{
-  line-height: 64px;
-  text-align: center;
-  vertical-align: middle
+.cart-item .col h6 {
+  /* position: absolute;
+  top: 50%;
+  transform: translateY(-50%); */
+  margin: 10px 0px 0px;
 }
 .cart-item .col {
   height: 100%;
-  width: 100%
+  width: 100%;
 }
-.cart-item .col i{
+.cart-item .col i {
   align-self: center;
-  margin: 0 8px;
   cursor: pointer;
+  margin: 10px 9px 0px;
 }
-

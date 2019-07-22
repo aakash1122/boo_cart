@@ -89,6 +89,17 @@ export const allProducts = [
   },
   {
     id: uuid(),
+    name: "Huawei P30 Pro",
+    price: 800,
+    desc:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum harum adipisci architecto quia cupiditate eius ipsam quisquam exercitationem magnam obcaecati!",
+    img:
+      "https://images.kogan.com/image/fetch/s--tAdDUNLE--/b_white,c_pad,f_auto,h_502,q_auto:good,w_753/https://assets.kogan.com/files/product/aub/huw/HUW-1101002357_1_V2.jpg",
+    qtty: 3,
+    inCart: false
+  },
+  {
+    id: uuid(),
     name: "OnePlus 7 Pro",
     price: 750,
     desc:
@@ -99,11 +110,3 @@ export const allProducts = [
     inCart: false
   }
 ];
-
-{
-  /* <p>
-  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum harum adipisci
-  architecto quia cupiditate eius ipsam quisquam exercitationem magnam
-  obcaecati!
-</p>; */
-}

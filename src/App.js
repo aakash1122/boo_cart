@@ -4,6 +4,7 @@ import Navbar from "./components/Navbar";
 import StoreContext from "./contexts/StoreContext";
 import ProductList from "./components/ProductList";
 import Cart from "./components/Cart";
+import ProductDetail from "./components/ProductDetail";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <Switch>
           <Route exact path="/" component={ProductList} />
           <Route exact path="/cart" component={Cart} />
+          <Route exact path="/product/:id" component={ProductDetail} />
         </Switch>
       </StoreContext>
     </div>
